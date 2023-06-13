@@ -1,0 +1,43 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+
+}
+header{
+    background-color: aqua;
+}
+
+footer{
+    background-color: aqua;
+}
+
+#site-title{
+    color: blue;
+}
+
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+    width: 500px;
+    height: auto;
+}
+.hobbies-list{
+    list-style-type: square;
+}
+
+.hobbies-list li:nth-child(odd){
+    background-color: beige;
+}
+.menu-items li{
+    list-style: none;
+}
+
+.menu-items li a{
+    text-decoration: none;
+    background-color: yellow;
+    border-color: black;
+    border: 2px solid black;
+}
+.menu-items li a:hover{
+    background-color: orange;
+}
