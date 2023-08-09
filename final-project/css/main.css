@@ -1,53 +1,97 @@
-.body {
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 1.25em;
-    display: grid;
-    grid-template-columns: 1fr; 
-  }
-  
-  h2 {
-    margin-bottom: 0;
-  }
-  
-  h2, p {
-    grid-column: 1/-1;
-  }
-  
-  .article {
-    margin-top: 1em;
-    border: 2px solid #f1f1f1;
-    border-radius: 8px;
-    padding: 1em;
-    background-color: #fff;
-  }
-  
-  
-  
-  
-  ul {
-    list-style:none;
-  }
-  
-  ul li {
-    
-  }
-  
-  ul li::before {
-    content: 'star';
-    font-family: 'Material Icons Outlined';
-  }
-  
-  
-  
-  @media only screen and (min-width: 36em) {
-    section {
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 1em;
-    }
-  }
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul, li,
+fieldset, form, label,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c78c06;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-item a {
+  color: white;
+}
+
+
+.hero {
+  background-color: #ffe6ac;
+  text-align: center;
+  padding: 40px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  margin-top: 20px;
+}
+
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+footer {
+  background-color: black;
+  color: #c78c06;
+  text-align:center;
+  padding:10px 0;
+}
